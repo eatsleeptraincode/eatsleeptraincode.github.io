@@ -9,8 +9,8 @@
   <meta name="author" content="Ryan Weppler">
 
   
-  <meta name="description" content="Events JQuery.noConflict();
-JQuery(document).ready(function() { $('#calendar').fullCalendar({ events: 'https://www.google.com/calendar/feeds/ &hellip;">
+  <meta name="description" content="Events jQuery.noConflict();
+jQuery(document).ready(function() { jQuery('#calendar').fullCalendar({ events: 'https://www.google.com/calendar/feeds/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -76,11 +76,12 @@ JQuery(document).ready(function() { $('#calendar').fullCalendar({ events: 'https
   
   <script type='text/javascript' src='../javascripts/libs/jquery.min.js'></script>
 <script type='text/javascript' src='../javascripts/fullcalendar.min.js'></script>
+<script type='text/javascript' src='../javascripts/gcal.js'></script>
 <div id='calendar'></div>
 <script type='text/javascript'>
-JQuery.noConflict();
-JQuery(document).ready(function() {
-    $('#calendar').fullCalendar({
+jQuery.noConflict();
+jQuery(document).ready(function() {
+    jQuery('#calendar').fullCalendar({
 			events: 'https://www.google.com/calendar/feeds/2d4mrgj3isae22pi4dg4vh2kec%40group.calendar.google.com/public/basic',
 			currentTimezone: 'America/Winnipeg'
 		});
